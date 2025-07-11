@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=360, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Bullet Army Run – Battle Log</title>
+    <meta
+      name="description"
+      content="Latest updates and battle reports from Bullet Army Run. Stay informed about new features, army strategies, and commander achievements!"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.jpg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/battle-log.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="container">
+      <div class="page-section">
+        <section class="news-section" id="game-updates-section">
+          <h2 class="news-title">Army Updates</h2>
+          <div class="news-list">
+            <div class="news-item">
+              <div class="news-item-title">New Command Missions!</div>
+              <div class="news-item-short">
+                Lead your army through 15 new challenging missions with advanced
+                parkour platforms.
+              </div>
+              <button class="read-more-btn">Read more</button>
+              <div class="news-item-full" style="display: none">
+                We're excited to announce the release of 15 brand new command
+                missions in Bullet Army Run! Each mission introduces unique army
+                mechanics, new obstacle patterns, and intense parkour challenges
+                that will test your strategic thinking like never before.
+                Prepare for deadly cutters, massive hammers, and complex
+                platform layouts. Can you lead your bullet army to victory
+                through all the new challenges? Jump in and see how far your
+                command skills can take you!
+                <img
+                  src="img/img_two.jpg"
+                  alt="New Army Mission"
+                  class="news-item-img"
+                  style="
+                    display: block;
+                    margin: 1.2em auto 0 auto;
+                    max-width: 180px;
+                    border-radius: 16px;
+                    box-shadow: 0 2px 12px #0002;
+                  "
+                />
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-item-title">Enhanced Army Controls</div>
+              <div class="news-item-short">
+                Improved army responsiveness and smoother command execution on
+                all devices.
+              </div>
+              <button class="read-more-btn">Read more</button>
+              <div class="news-item-full" style="display: none">
+                Thanks to valuable feedback from our dedicated commanders, we've
+                optimized Bullet Army Run to provide even smoother army control
+                across phones, tablets, and desktops. Whether you're on an older
+                device or the latest model, enjoy lightning-fast army movements,
+                seamless bullet collection animations, and reduced loading
+                times. Your command experience is now more fluid and responsive,
+                letting you focus on perfecting your army strategy without
+                distractions.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="news-section" id="trail-diaries-section">
+          <h2 class="news-title">Commander Diaries</h2>
+          <div class="news-list">
+            <div class="news-item">
+              <div class="news-item-title">
+                My First Mega Army — How I commanded 150 bullets in one mission
+              </div>
+              <div class="news-item-short">
+                Leading 150 bullets in one run felt like an impossible dream —
+                until it happened!
+              </div>
+              <button class="read-more-btn">Read more</button>
+              <div class="news-item-full" style="display: none">
+                In this commander diary, I share the exact route I took, how I
+                managed my army growth, and the key moments where I made perfect
+                strategic decisions to keep my bullet army alive. Whether you're
+                a new commander or looking to improve your army size record,
+                these insights will help you think ahead and make smarter
+                tactical moves. Get ready to command bigger armies than ever!
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-item-title">Army Strategy Mastery</div>
+              <div class="news-item-short">
+                Top tips and tricks for commanding the perfect army every time.
+              </div>
+              <button class="read-more-btn">Read more</button>
+              <div class="news-item-full" style="display: none">
+                Commanding your bullet army is the heart of Bullet Army Run.
+                After dozens of hours leading armies and experimenting with
+                tactics, I've uncovered some essential tips for new and
+                experienced commanders alike:<br /><br />
+                <ul>
+                  <li>
+                    Always collect extra bullets before attempting dangerous
+                    obstacle sections.
+                  </li>
+                  <li>
+                    Look ahead to spot the safest landing spots and avoid deadly
+                    traps.
+                  </li>
+                  <li>
+                    Use strategic positioning to access bonus bullets that can
+                    expand your army.
+                  </li>
+                  <li>
+                    Practice timing to navigate obstacles precisely and avoid
+                    army losses.
+                  </li>
+                </ul>
+                Master these techniques, and you'll be unstoppable on your way
+                to becoming the ultimate army commander!
+                <img
+                  src="img/img_three.jpg"
+                  alt="Army Strategy"
+                  class="news-item-img"
+                  style="
+                    display: block;
+                    margin: 1.2em auto 0 auto;
+                    max-width: 180px;
+                    border-radius: 16px;
+                    box-shadow: 0 2px 12px #0002;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="footer"></div>
+    </main>
+    <script src="js/main.js"></script>
+    <script>
+      document.querySelectorAll(".news-section").forEach((section) => {
+        section.addEventListener("click", function (e) {
+          if (e.target.classList.contains("read-more-btn")) {
+            const item = e.target.closest(".news-item");
+            const full = item.querySelector(".news-item-full");
+            if (full.style.display === "none") {
+              full.style.display = "block";
+              e.target.textContent = "Show less";
+            } else {
+              full.style.display = "none";
+              e.target.textContent = "Read more";
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=360, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Bullet Army Run – Command Center</title>
+    <meta
+      name="description"
+      content="Contact the Bullet Army Run command center. Get in touch with our team for support, feedback, or partnership opportunities."
+    />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.jpg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/hq-contacts.css" />
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("contacts-form");
+        var success = document.getElementById("form-success");
+        var nameInput = document.getElementById("name-input");
+        var phoneInput = document.getElementById("phone-input");
+        var messageInput = document.getElementById("message-input");
+
+        // Валідація імені
+        nameInput.addEventListener("input", function () {
+          if (this.value.length < 2) {
+            this.setCustomValidity("Name must be at least 2 characters long");
+          } else if (this.value.length > 50) {
+            this.setCustomValidity("Name must be less than 50 characters");
+          } else {
+            this.setCustomValidity("");
+          }
+        });
+
+        // Валідація телефону
+        phoneInput.addEventListener("input", function () {
+          var phoneRegex = /^[\+]?[0-9\s\-\(\)]{7,20}$/;
+          if (!phoneRegex.test(this.value)) {
+            this.setCustomValidity("Please enter a valid phone number");
+          } else {
+            this.setCustomValidity("");
+          }
+        });
+
+        // Валідація повідомлення
+        messageInput.addEventListener("input", function () {
+          if (this.value.length < 10) {
+            this.setCustomValidity(
+              "Message must be at least 10 characters long"
+            );
+          } else if (this.value.length > 500) {
+            this.setCustomValidity("Message must be less than 500 characters");
+          } else {
+            this.setCustomValidity("");
+          }
+        });
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Додаткова перевірка перед відправкою
+          if (nameInput.value.length < 2) {
+            nameInput.focus();
+            return;
+          }
+
+          if (!/^[\+]?[0-9\s\-\(\)]{7,20}$/.test(phoneInput.value)) {
+            phoneInput.focus();
+            return;
+          }
+
+          if (messageInput.value.length < 10) {
+            messageInput.focus();
+            return;
+          }
+
+          // Якщо все валідно - відправляємо
+          form.reset();
+          success.style.display = "block";
+          setTimeout(() => {
+            success.style.display = "none";
+          }, 3500);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="container">
+      <div class="page-section">
+        <section class="contacts-section">
+          <div class="contacts-info">
+            <div class="contacts-details">
+              <h2 class="contacts-title">Command Center</h2>
+              <ul class="contacts-list">
+                <li>
+                  <strong>Email:</strong>
+                  <a href="mailto:support@domain.com">support@domain.com</a>
+                </li>
+                <li>
+                  <strong>Phone:</strong>
+                  <a href="tel:+61298765432">+61 2 9876 5432</a>
+                </li>
+                <li>
+                  <strong>Address:</strong>
+                  15 Military Road, Neutral Bay NSW 2089, Australia
+                </li>
+              </ul>
+            </div>
+            <div class="contacts-map-block">
+              <iframe
+                class="contacts-map"
+                src="https://www.google.com/maps?q=15+Military+Road,+Neutral+Bay+NSW+2089,+Australia&output=embed&hl=en"
+                title="Australia map"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="contacts-form-block">
+            <h2 class="contacts-title">Send Message</h2>
+            <form class="contacts-form" id="contacts-form" autocomplete="off">
+              <input
+                type="text"
+                name="name"
+                id="name-input"
+                placeholder="Name (min 2 characters)"
+                required
+                minlength="2"
+                maxlength="50"
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phone-input"
+                placeholder="Phone number"
+                required
+                pattern="[\+]?[0-9\s\-\(\)]{7,20}"
+              />
+              <textarea
+                name="message"
+                id="message-input"
+                placeholder="Message (min 10 characters)"
+                rows="4"
+                required
+                minlength="10"
+                maxlength="500"
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+            <div class="form-success" id="form-success">
+              Message sent! We'll contact you soon.
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>
