@@ -118,7 +118,7 @@ a:hover {
   bottom: 0;
   background: rgba(34, 44, 54, 0.85);
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   animation: fadeIn 0.3s;
 }
 .mobile-menu-modal.active {
@@ -126,14 +126,18 @@ a:hover {
 }
 .mobile-menu-content {
   background: var(--color-white);
-  border-radius: var(--radius-main);
+  border-radius: var(--radius-main) 0 0 var(--radius-main);
   box-shadow: 0 4px 32px var(--color-shadow);
   padding: 2rem 1.5rem;
-  min-width: 220px;
+  min-width: 280px;
   max-width: 90vw;
   text-align: center;
   position: relative;
-  animation: heroFadeIn 0.4s;
+  animation: slideInRight 0.4s;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .mobile-menu-content ul {
   list-style: none;
@@ -155,13 +159,14 @@ a:hover {
 }
 .close-modal {
   position: absolute;
-  top: 0.7rem;
+  top: 1rem;
   right: 1rem;
   background: none;
   border: none;
   font-size: 2rem;
   color: var(--color-accent);
   cursor: pointer;
+  z-index: 10;
 }
 
 .site-footer {
@@ -295,6 +300,17 @@ a:hover {
   border-bottom-color: var(--color-primary);
   text-shadow: 0 1px 3px rgba(255, 107, 53, 0.3);
 }
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes cookieBannerIn {
   from {
     opacity: 0;

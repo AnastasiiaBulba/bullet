@@ -90,18 +90,42 @@
 }
 .contacts-details li {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.08rem;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 1rem;
   color: var(--color-text);
   font-weight: 500;
   background: var(--color-bg);
   border-radius: var(--radius-main);
-  padding: 0.7em 1.2em;
+  padding: 0.8em 1em;
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0 1px 4px var(--color-shadow);
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
+/* Мобільна версія */
+@media (max-width: 767px) {
+  .contacts-details li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1em;
+  }
+
+  .contacts-details li strong {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    min-width: 60px;
+  }
+
+  .contacts-details li a {
+    word-break: break-all;
+    line-height: 1.4;
+  }
+}
+
 @media (min-width: 768px) {
   .contacts-section {
   }

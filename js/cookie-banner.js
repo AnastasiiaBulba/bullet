@@ -20,11 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (consent) {
     console.log("User already accepted cookies, hiding banner");
-    banner.style.display = "none";
     banner.classList.add("hidden");
   } else {
     console.log("User hasn't accepted cookies, showing banner");
-    banner.style.display = "flex";
     banner.classList.remove("hidden");
   }
 
@@ -46,8 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("cookieConsent", "accepted");
       console.log("✅ Cookie consent saved");
 
-      // Приховуємо банер двома способами
-      banner.style.display = "none";
+      // Приховуємо банер
       banner.classList.add("hidden");
       console.log("✅ Banner hidden");
     });

@@ -31,10 +31,8 @@ function createMobileMenu() {
         <ul>
           <li><a href="./">Home</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#how-to-play">How to Play</a></li>
-          <li><a href="#bridge-construction">Army Strategy</a></li>
+          <li><a href="#command-strategy">Strategy</a></li>
           <li><a href="#reviews">Reviews</a></li>
-          <li><a href="army-command.html">Battle Log</a></li>
           <li><a href="command-center.html">Contacts</a></li>
           <li><a href="game-disclaimer.html">Disclaimer</a></li>
         </ul>
