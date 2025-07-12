@@ -1,13 +1,13 @@
 :root {
-  --color-bg: #0a0e1a;
-  --color-primary: #ff6b35;
-  --color-accent: #ffd700;
-  --color-tile: #4ecdc4;
-  --color-bridge: #ff4757;
+  --color-bg: #2d1b3d;
+  --color-primary: #ff6b9d;
+  --color-accent: #ffd93d;
+  --color-tile: #6bcf7f;
+  --color-bridge: #ff8a80;
   --color-text: #ffffff;
   --color-muted: #a0a0a0;
   --color-white: #ffffff;
-  --color-shadow: rgba(255, 107, 53, 0.15);
+  --color-shadow: rgba(255, 107, 157, 0.15);
   --radius-main: 12px;
   --transition-main: 0.25s cubic-bezier(0.4, 1, 0.7, 1);
   --font-main: system-ui, "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue",

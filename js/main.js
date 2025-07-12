@@ -33,7 +33,7 @@ function createMobileMenu() {
           <li><a href="#features">Features</a></li>
           <li><a href="#command-strategy">Strategy</a></li>
           <li><a href="#reviews">Reviews</a></li>
-          <li><a href="command-center.html">Contacts</a></li>
+          <li><a href="bakery-contacts.html">Contacts</a></li>
           <li><a href="game-disclaimer.html">Disclaimer</a></li>
         </ul>
       </div>
@@ -117,10 +117,10 @@ function enableSmoothScrollAnchors() {
 // Завантаження header/footer, мобільне меню, плавна прокрутка, рік у футері, cookie-banner
 
 document.addEventListener("DOMContentLoaded", function () {
-  loadPartial("header", "army-partials/header.html", function () {
+  loadPartial("header", "bakery-partials/header.html", function () {
     createMobileMenu();
     enableSmoothScrollAnchors();
   });
-  loadPartial("footer", "army-partials/footer.html");
+  loadPartial("footer", "bakery-partials/footer.html");
   // footer-year.js і cookie-banner.js самі підписані на DOMContentLoaded
 });

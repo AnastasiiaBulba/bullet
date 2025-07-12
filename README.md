@@ -1,33 +1,32 @@
-# Bullet Army Run - Official Website
+# Kid Cakes Maker Cooking Bakery - Official Website
 
-Welcome to the official website for **Bullet Army Run**, an exciting casual puzzle game where you command your bullet army through challenging parkour platforms!
+Welcome to the official website for **Kid Cakes Maker Cooking Bakery**, an exciting casual cooking simulation game for kids who love food and DIY games!
 
 ## 🎮 About the Game
 
-Bullet Army Run is a strategic puzzle game that tests your reflexes and tactical thinking. As a commander, you lead your bullet army through various parkour platforms while collecting reinforcements and avoiding deadly obstacles like cutters and hammers.
+Kid Cakes Maker Cooking Bakery is a delightful cooking simulation game that lets kids learn baking skills while having fun. Players shop for ingredients, mix them in bowls, put mixtures in moulds, and bake beautiful cakes with cute animals!
 
 ### Key Features:
 
-- **Army Command**: Lead your bullet soldiers with strategic precision
-- **Parkour Challenges**: Navigate through challenging platform layouts
-- **Army Growth**: Collect bullets to expand your army size
-- **Obstacle Avoidance**: Dodge deadly cutters and hammers
-- **Strategic Thinking**: Plan your route to maximize army growth
+- **Shopping Experience**: Shop for ingredients and cooking tools in the store
+- **Mixing Skills**: Mix ingredients in bowls and create delicious recipes
+- **Baking Process**: Put mixtures in moulds to take beautiful shapes
+- **Oven Baking**: Heat cakes in the oven for perfect results
+- **Creative Decoration**: Decorate cakes with cute animals and colorful designs
 
 ## 🌐 Website Structure
 
 ### Main Pages:
 
 - **Home** (`index.html`) - Game overview, features, and how to play
-- **Battle Log** (`battle-log.html`) - Latest updates and commander diaries
-- **Command Center** (`hq-contacts.html`) - Contact information and support
-- **Disclaimer** (`offroad-disclaimer.html`) - Legal information
-- **Cookies Policy** (`jeep-cookies.html`) - Cookie usage information
-- **Privacy Policy** (`jeep-privacy.html`) - Privacy protection details
+- **Bakery Contacts** (`bakery-contacts.html`) - Contact information and support
+- **Disclaimer** (`game-disclaimer.html`) - Legal information
+- **Cookies Policy** (`bakery-cookies.html`) - Cookie usage information
+- **Privacy Policy** (`bakery-privacy.html`) - Privacy protection details
 
 ### Design Features:
 
-- **Industrial Gaming Theme**: Dark background with vibrant orange and gold accents
+- **Sweet Bakery Theme**: Purple background with pink and yellow accents
 - **Responsive Design**: Optimized for all devices
 - **Smooth Animations**: Enhanced user experience with CSS transitions
 - **Australian Localization**: Contact information and regional compliance
@@ -36,11 +35,11 @@ Bullet Army Run is a strategic puzzle game that tests your reflexes and tactical
 
 ### Color Palette:
 
-- **Primary**: `#ff6b35` (Vibrant Orange)
-- **Accent**: `#ffd700` (Golden Yellow)
-- **Background**: `#0a0e1a` (Dark Navy)
+- **Primary**: `#ff6b9d` (Sweet Pink)
+- **Accent**: `#ffd93d` (Golden Yellow)
+- **Background**: `#2d1b3d` (Deep Purple)
 - **Text**: `#ffffff` (White)
-- **Secondary**: `#4ecdc4` (Teal)
+- **Secondary**: `#6bcf7f` (Mint Green)
 
 ### Typography:
 
@@ -66,15 +65,15 @@ Bullet Army Run is a strategic puzzle game that tests your reflexes and tactical
 
 ## 🗺️ Contact Information
 
-**Command Center Location:**
+**Bakery Location:**
 
-- **Address**: 15 Military Road, Neutral Bay NSW 2089, Australia
+- **Address**: 15 Sweet Street, Bakery Bay NSW 2089, Australia
 - **Phone**: +61 2 9876 5432
-- **Email**: support@domain.com
+- **Email**: support@kidcakesmaker.com
 
 ## 📄 Legal Information
 
-- **Copyright**: © 2025 Bullet Army Run. All rights reserved.
+- **Copyright**: © 2025 Kid Cakes Maker. All rights reserved.
 - **Privacy**: Compliant with Australian digital privacy guidelines
 - **Cookies**: Essential and performance cookies only
 - **No Tracking**: No third-party tracking or marketing cookies
@@ -90,19 +89,20 @@ Bullet Army Run is a strategic puzzle game that tests your reflexes and tactical
 
 ### How to Play:
 
-1. **Lead your bullet army** through parkour platforms
-2. **Collect bullets** to grow your army size
-3. **Avoid obstacles** like cutters and hammers
-4. **Plan your route** to maximize army growth
-5. **Keep your army together** for better control
+1. **Shop for ingredients** and cooking tools in the store
+2. **Mix ingredients** in bowls for perfect recipes
+3. **Put mixtures in moulds** and bake in oven
+4. **Choose the right ingredients** for each recipe
+5. **Time your baking** perfectly for best results
 
 ### Tips for Success:
 
-- Prioritize routes with more bullet pickups
-- Avoid dangerous obstacles that can reduce your forces
-- Keep your army together for better maneuverability
-- Use strategic positioning to navigate tight spaces
+- Select fresh ingredients for better cake quality
+- Follow recipe instructions carefully
+- Time your baking process accurately
+- Be creative with cake decorations
+- The more creative your decoration, the higher your score!
 
 ---
 
-**Bullet Army Run** - Command your army, conquer the challenges!
+**Kid Cakes Maker Cooking Bakery** - Bake delicious cakes, create sweet memories!
