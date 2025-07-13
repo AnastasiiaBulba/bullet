@@ -500,28 +500,6 @@
     <div id="footer"></div>
     <script src="js/main.js"></script>
     <script src="js/cookie-banner.js"></script>
-    <script>
-      // Strategy tabs functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const strategyTabs = document.querySelectorAll(".strategy-tab");
-        const strategyPanels = document.querySelectorAll(".strategy-panel");
-
-        strategyTabs.forEach((tab) => {
-          tab.addEventListener("click", function () {
-            const targetStrategy = this.getAttribute("data-strategy");
-
-            // Remove active class from all tabs and panels
-            strategyTabs.forEach((t) => t.classList.remove("active"));
-            strategyPanels.forEach((p) => p.classList.remove("active"));
-
-            // Add active class to clicked tab and corresponding panel
-            this.classList.add("active");
-            document
-              .querySelector(`[data-strategy="${targetStrategy}"]`)
-              .classList.add("active");
-          });
-        });
-      });
-    </script>
+    <script src="js/strategy-tabs.js"></script>
   </body>
 </html>

@@ -902,12 +902,15 @@ main {
 }
 
 .strategy-panel {
-  display: none;
+  display: none !important;
   animation: fadeIn 0.5s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .strategy-panel.active {
-  display: block;
+  display: block !important;
+  opacity: 1;
 }
 
 .strategy-header {
